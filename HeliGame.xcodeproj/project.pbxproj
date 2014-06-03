@@ -21,6 +21,10 @@
 		EA016809193D6498007DCE4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0167EB193D6498007DCE4F /* UIKit.framework */; };
 		EA016811193D6498007DCE4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA01680F193D6498007DCE4F /* InfoPlist.strings */; };
 		EA016813193D6498007DCE4F /* HeliGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA016812193D6498007DCE4F /* HeliGameTests.m */; };
+		EA016820193D64E8007DCE4F /* HeliBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = EA01681C193D64E8007DCE4F /* HeliBackGround.png */; };
+		EA016821193D64E8007DCE4F /* HeliDown.png in Resources */ = {isa = PBXBuildFile; fileRef = EA01681D193D64E8007DCE4F /* HeliDown.png */; };
+		EA016822193D64E8007DCE4F /* HeliUp.png in Resources */ = {isa = PBXBuildFile; fileRef = EA01681E193D64E8007DCE4F /* HeliUp.png */; };
+		EA016823193D64E8007DCE4F /* Obstacle.png in Resources */ = {isa = PBXBuildFile; fileRef = EA01681F193D64E8007DCE4F /* Obstacle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		EA01680E193D6498007DCE4F /* HeliGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeliGameTests-Info.plist"; sourceTree = "<group>"; };
 		EA016810193D6498007DCE4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA016812193D6498007DCE4F /* HeliGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeliGameTests.m; sourceTree = "<group>"; };
+		EA01681C193D64E8007DCE4F /* HeliBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliBackGround.png; sourceTree = "<group>"; };
+		EA01681D193D64E8007DCE4F /* HeliDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliDown.png; sourceTree = "<group>"; };
+		EA01681E193D64E8007DCE4F /* HeliUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliUp.png; sourceTree = "<group>"; };
+		EA01681F193D64E8007DCE4F /* Obstacle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Obstacle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,10 @@
 		EA0167EE193D6498007DCE4F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA01681C193D64E8007DCE4F /* HeliBackGround.png */,
+				EA01681D193D64E8007DCE4F /* HeliDown.png */,
+				EA01681E193D64E8007DCE4F /* HeliUp.png */,
+				EA01681F193D64E8007DCE4F /* Obstacle.png */,
 				EA0167EF193D6498007DCE4F /* HeliGame-Info.plist */,
 				EA0167F0193D6498007DCE4F /* InfoPlist.strings */,
 				EA0167F3193D6498007DCE4F /* main.m */,
@@ -228,9 +240,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA016822193D64E8007DCE4F /* HeliUp.png in Resources */,
 				EA016800193D6498007DCE4F /* Images.xcassets in Resources */,
+				EA016823193D64E8007DCE4F /* Obstacle.png in Resources */,
 				EA0167F2193D6498007DCE4F /* InfoPlist.strings in Resources */,
+				EA016821193D64E8007DCE4F /* HeliDown.png in Resources */,
 				EA0167FB193D6498007DCE4F /* Main.storyboard in Resources */,
+				EA016820193D64E8007DCE4F /* HeliBackGround.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
