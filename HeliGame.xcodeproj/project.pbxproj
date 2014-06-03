@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA0167E8193D6498007DCE4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0167E7193D6498007DCE4F /* Foundation.framework */; };
+		EA0167EA193D6498007DCE4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0167E9193D6498007DCE4F /* CoreGraphics.framework */; };
+		EA0167EC193D6498007DCE4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0167EB193D6498007DCE4F /* UIKit.framework */; };
+		EA0167F2193D6498007DCE4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA0167F0193D6498007DCE4F /* InfoPlist.strings */; };
+		EA0167F4193D6498007DCE4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0167F3193D6498007DCE4F /* main.m */; };
+		EA0167F8193D6498007DCE4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0167F7193D6498007DCE4F /* AppDelegate.m */; };
+		EA0167FB193D6498007DCE4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0167F9193D6498007DCE4F /* Main.storyboard */; };
+		EA0167FE193D6498007DCE4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0167FD193D6498007DCE4F /* ViewController.m */; };
+		EA016800193D6498007DCE4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0167FF193D6498007DCE4F /* Images.xcassets */; };
+		EA016807193D6498007DCE4F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA016806193D6498007DCE4F /* XCTest.framework */; };
+		EA016808193D6498007DCE4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0167E7193D6498007DCE4F /* Foundation.framework */; };
+		EA016809193D6498007DCE4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0167EB193D6498007DCE4F /* UIKit.framework */; };
+		EA016811193D6498007DCE4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA01680F193D6498007DCE4F /* InfoPlist.strings */; };
+		EA016813193D6498007DCE4F /* HeliGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA016812193D6498007DCE4F /* HeliGameTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA01680A193D6498007DCE4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA0167DC193D6498007DCE4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA0167E3193D6498007DCE4F;
+			remoteInfo = HeliGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA0167E4193D6498007DCE4F /* HeliGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeliGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0167E7193D6498007DCE4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA0167E9193D6498007DCE4F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA0167EB193D6498007DCE4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA0167EF193D6498007DCE4F /* HeliGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeliGame-Info.plist"; sourceTree = "<group>"; };
+		EA0167F1193D6498007DCE4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA0167F3193D6498007DCE4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA0167F5193D6498007DCE4F /* HeliGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeliGame-Prefix.pch"; sourceTree = "<group>"; };
+		EA0167F6193D6498007DCE4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA0167F7193D6498007DCE4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA0167FA193D6498007DCE4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA0167FC193D6498007DCE4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA0167FD193D6498007DCE4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA0167FF193D6498007DCE4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA016805193D6498007DCE4F /* HeliGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeliGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA016806193D6498007DCE4F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EA01680E193D6498007DCE4F /* HeliGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeliGameTests-Info.plist"; sourceTree = "<group>"; };
+		EA016810193D6498007DCE4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA016812193D6498007DCE4F /* HeliGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeliGameTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA0167E1193D6498007DCE4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0167EA193D6498007DCE4F /* CoreGraphics.framework in Frameworks */,
+				EA0167EC193D6498007DCE4F /* UIKit.framework in Frameworks */,
+				EA0167E8193D6498007DCE4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA016802193D6498007DCE4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA016807193D6498007DCE4F /* XCTest.framework in Frameworks */,
+				EA016809193D6498007DCE4F /* UIKit.framework in Frameworks */,
+				EA016808193D6498007DCE4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA0167DB193D6498007DCE4F = {
+			isa = PBXGroup;
+			children = (
+				EA0167ED193D6498007DCE4F /* HeliGame */,
+				EA01680C193D6498007DCE4F /* HeliGameTests */,
+				EA0167E6193D6498007DCE4F /* Frameworks */,
+				EA0167E5193D6498007DCE4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA0167E5193D6498007DCE4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA0167E4193D6498007DCE4F /* HeliGame.app */,
+				EA016805193D6498007DCE4F /* HeliGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA0167E6193D6498007DCE4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA0167E7193D6498007DCE4F /* Foundation.framework */,
+				EA0167E9193D6498007DCE4F /* CoreGraphics.framework */,
+				EA0167EB193D6498007DCE4F /* UIKit.framework */,
+				EA016806193D6498007DCE4F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA0167ED193D6498007DCE4F /* HeliGame */ = {
+			isa = PBXGroup;
+			children = (
+				EA0167F6193D6498007DCE4F /* AppDelegate.h */,
+				EA0167F7193D6498007DCE4F /* AppDelegate.m */,
+				EA0167F9193D6498007DCE4F /* Main.storyboard */,
+				EA0167FC193D6498007DCE4F /* ViewController.h */,
+				EA0167FD193D6498007DCE4F /* ViewController.m */,
+				EA0167FF193D6498007DCE4F /* Images.xcassets */,
+				EA0167EE193D6498007DCE4F /* Supporting Files */,
+			);
+			path = HeliGame;
+			sourceTree = "<group>";
+		};
+		EA0167EE193D6498007DCE4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA0167EF193D6498007DCE4F /* HeliGame-Info.plist */,
+				EA0167F0193D6498007DCE4F /* InfoPlist.strings */,
+				EA0167F3193D6498007DCE4F /* main.m */,
+				EA0167F5193D6498007DCE4F /* HeliGame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA01680C193D6498007DCE4F /* HeliGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA016812193D6498007DCE4F /* HeliGameTests.m */,
+				EA01680D193D6498007DCE4F /* Supporting Files */,
+			);
+			path = HeliGameTests;
+			sourceTree = "<group>";
+		};
+		EA01680D193D6498007DCE4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA01680E193D6498007DCE4F /* HeliGameTests-Info.plist */,
+				EA01680F193D6498007DCE4F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA0167E3193D6498007DCE4F /* HeliGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA016816193D6498007DCE4F /* Build configuration list for PBXNativeTarget "HeliGame" */;
+			buildPhases = (
+				EA0167E0193D6498007DCE4F /* Sources */,
+				EA0167E1193D6498007DCE4F /* Frameworks */,
+				EA0167E2193D6498007DCE4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeliGame;
+			productName = HeliGame;
+			productReference = EA0167E4193D6498007DCE4F /* HeliGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA016804193D6498007DCE4F /* HeliGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA016819193D6498007DCE4F /* Build configuration list for PBXNativeTarget "HeliGameTests" */;
+			buildPhases = (
+				EA016801193D6498007DCE4F /* Sources */,
+				EA016802193D6498007DCE4F /* Frameworks */,
+				EA016803193D6498007DCE4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA01680B193D6498007DCE4F /* PBXTargetDependency */,
+			);
+			name = HeliGameTests;
+			productName = HeliGameTests;
+			productReference = EA016805193D6498007DCE4F /* HeliGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA0167DC193D6498007DCE4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = rootls;
+				TargetAttributes = {
+					EA016804193D6498007DCE4F = {
+						TestTargetID = EA0167E3193D6498007DCE4F;
+					};
+				};
+			};
+			buildConfigurationList = EA0167DF193D6498007DCE4F /* Build configuration list for PBXProject "HeliGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA0167DB193D6498007DCE4F;
+			productRefGroup = EA0167E5193D6498007DCE4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA0167E3193D6498007DCE4F /* HeliGame */,
+				EA016804193D6498007DCE4F /* HeliGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA0167E2193D6498007DCE4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA016800193D6498007DCE4F /* Images.xcassets in Resources */,
+				EA0167F2193D6498007DCE4F /* InfoPlist.strings in Resources */,
+				EA0167FB193D6498007DCE4F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA016803193D6498007DCE4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA016811193D6498007DCE4F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA0167E0193D6498007DCE4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0167FE193D6498007DCE4F /* ViewController.m in Sources */,
+				EA0167F8193D6498007DCE4F /* AppDelegate.m in Sources */,
+				EA0167F4193D6498007DCE4F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA016801193D6498007DCE4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA016813193D6498007DCE4F /* HeliGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA01680B193D6498007DCE4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA0167E3193D6498007DCE4F /* HeliGame */;
+			targetProxy = EA01680A193D6498007DCE4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA0167F0193D6498007DCE4F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA0167F1193D6498007DCE4F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA0167F9193D6498007DCE4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA0167FA193D6498007DCE4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA01680F193D6498007DCE4F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA016810193D6498007DCE4F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA016814193D6498007DCE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA016815193D6498007DCE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA016817193D6498007DCE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeliGame/HeliGame-Prefix.pch";
+				INFOPLIST_FILE = "HeliGame/HeliGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA016818193D6498007DCE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeliGame/HeliGame-Prefix.pch";
+				INFOPLIST_FILE = "HeliGame/HeliGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA01681A193D6498007DCE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HeliGame.app/HeliGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeliGame/HeliGame-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HeliGameTests/HeliGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EA01681B193D6498007DCE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HeliGame.app/HeliGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeliGame/HeliGame-Prefix.pch";
+				INFOPLIST_FILE = "HeliGameTests/HeliGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA0167DF193D6498007DCE4F /* Build configuration list for PBXProject "HeliGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA016814193D6498007DCE4F /* Debug */,
+				EA016815193D6498007DCE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA016816193D6498007DCE4F /* Build configuration list for PBXNativeTarget "HeliGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA016817193D6498007DCE4F /* Debug */,
+				EA016818193D6498007DCE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA016819193D6498007DCE4F /* Build configuration list for PBXNativeTarget "HeliGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA01681A193D6498007DCE4F /* Debug */,
+				EA01681B193D6498007DCE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA0167DC193D6498007DCE4F /* Project object */;
+}
