@@ -11,9 +11,12 @@
 int Y;
 BOOL Start;
 int randomPosition;
+int scoreNumber;
+int highScore;
 
 @interface ViewController : UIViewController{
     NSTimer *timer;
+    NSTimer *scorer;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *intro1;
@@ -40,6 +43,13 @@ int randomPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *top5;
 @property (weak, nonatomic) IBOutlet UIImageView *top6;
 
+@property (weak, nonatomic) IBOutlet UILabel *score;
+
+
 -(void)heliMove;
+-(void)collision;
+-(void)endGame;
+-(void)newGame;
+-(void)scoring;
 
 @end

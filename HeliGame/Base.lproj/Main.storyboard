@@ -101,6 +101,13 @@
                                 <rect key="frame" x="410" y="20" width="89" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="得分:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="kYV-jK-cU8">
+                                <rect key="frame" x="316" y="299" width="144" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -120,6 +127,7 @@
                         <outlet property="intro3" destination="DdT-KD-GTw" id="wqv-bg-pkZ"/>
                         <outlet property="obstacle" destination="HTR-7C-gbl" id="Tzn-3n-88K"/>
                         <outlet property="obstacle2" destination="8d1-1U-O8U" id="in3-uL-Vuv"/>
+                        <outlet property="score" destination="kYV-jK-cU8" id="jPo-N6-daG"/>
                         <outlet property="top1" destination="7Eo-ec-FpP" id="VtI-ap-mOg"/>
                         <outlet property="top2" destination="VyN-ib-uuS" id="Zjt-gX-LRP"/>
                         <outlet property="top3" destination="bbR-Ex-whl" id="thb-mK-joX"/>

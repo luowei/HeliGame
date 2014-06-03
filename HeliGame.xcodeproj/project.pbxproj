@@ -25,6 +25,8 @@
 		EA016821193D64E8007DCE4F /* HeliDown.png in Resources */ = {isa = PBXBuildFile; fileRef = EA01681D193D64E8007DCE4F /* HeliDown.png */; };
 		EA016822193D64E8007DCE4F /* HeliUp.png in Resources */ = {isa = PBXBuildFile; fileRef = EA01681E193D64E8007DCE4F /* HeliUp.png */; };
 		EA016823193D64E8007DCE4F /* Obstacle.png in Resources */ = {isa = PBXBuildFile; fileRef = EA01681F193D64E8007DCE4F /* Obstacle.png */; };
+		EA807464193DAC7700999109 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EA807463193DAC7700999109 /* README.md */; };
+		EA807466193DC1A100999109 /* doc in Resources */ = {isa = PBXBuildFile; fileRef = EA807465193DC1A100999109 /* doc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		EA01681D193D64E8007DCE4F /* HeliDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliDown.png; sourceTree = "<group>"; };
 		EA01681E193D64E8007DCE4F /* HeliUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliUp.png; sourceTree = "<group>"; };
 		EA01681F193D64E8007DCE4F /* Obstacle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Obstacle.png; sourceTree = "<group>"; };
+		EA807463193DAC7700999109 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		EA807465193DC1A100999109 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +94,12 @@
 		EA0167DB193D6498007DCE4F = {
 			isa = PBXGroup;
 			children = (
+				EA807463193DAC7700999109 /* README.md */,
 				EA0167ED193D6498007DCE4F /* HeliGame */,
 				EA01680C193D6498007DCE4F /* HeliGameTests */,
 				EA0167E6193D6498007DCE4F /* Frameworks */,
 				EA0167E5193D6498007DCE4F /* Products */,
+				EA807465193DC1A100999109 /* doc */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,12 +246,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA807466193DC1A100999109 /* doc in Resources */,
 				EA016822193D64E8007DCE4F /* HeliUp.png in Resources */,
 				EA016800193D6498007DCE4F /* Images.xcassets in Resources */,
 				EA016823193D64E8007DCE4F /* Obstacle.png in Resources */,
 				EA0167F2193D6498007DCE4F /* InfoPlist.strings in Resources */,
 				EA016821193D64E8007DCE4F /* HeliDown.png in Resources */,
 				EA0167FB193D6498007DCE4F /* Main.storyboard in Resources */,
+				EA807464193DAC7700999109 /* README.md in Resources */,
 				EA016820193D64E8007DCE4F /* HeliBackGround.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +480,7 @@
 				EA016818193D6498007DCE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA016819193D6498007DCE4F /* Build configuration list for PBXNativeTarget "HeliGameTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +489,7 @@
 				EA01681B193D6498007DCE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

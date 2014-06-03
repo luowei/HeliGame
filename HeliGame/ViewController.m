@@ -15,7 +15,103 @@
 
 @implementation ViewController
 
+//发生碰撞结束游戏
+-(void)collision{
+    if(CGRectIntersectsRect(_heli.frame, _obstacle.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame, _obstacle2.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame, _bottom1.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame,_bottom2.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame, _bottom3.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame, _bottom4.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame,_bottom5.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame, _bottom6.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame, _top1.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame,_top2.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame, _top3.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame, _top4.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame,_top5.frame)){
+        [self endGame];
+    }
+    if(CGRectIntersectsRect(_heli.frame, _top6.frame)){
+        [self endGame];
+    }
+    if(_heli.frame.origin.y > 254 || _heli.frame.origin.y < 30){
+        [self endGame];
+    }
+    
+}
+
+-(void)endGame{
+    if(scoreNumber > highScore){
+        highScore = scoreNumber;
+        [[NSUserDefaults standardUserDefaults]setInteger:highScore forKey:@"HighScoreSaved"];
+    }
+    
+    _heli.hidden = YES;
+    [timer invalidate];
+    [scorer invalidate];
+    
+    [self performSelector:@selector(newGame) withObject:nil afterDelay:3	];
+    
+}
+
+-(void)newGame{
+    _bottom1.hidden = YES;
+    _bottom2.hidden = YES;
+    _bottom3.hidden = YES;
+    _bottom4.hidden = YES;
+    _bottom5.hidden = YES;
+    _bottom6.hidden = YES;
+    _top1.hidden = YES;
+    _top2.hidden = YES;
+    _top3.hidden = YES;
+    _top4.hidden = YES;
+    _top5.hidden = YES;
+    _top6.hidden = YES;
+    _obstacle.hidden = YES;
+    _obstacle2.hidden = YES;
+    
+    _intro1.hidden = NO;
+    _intro2.hidden = NO;
+    _intro3.hidden = NO;
+    _heli.hidden = NO;
+    _heli.center = CGPointMake(55, 160);
+    _heli.image = [UIImage imageNamed:@"HeliUp.png"];
+    
+    Start = YES;
+    scoreNumber = 0;
+    _score.text = [NSString stringWithFormat:@"得分:%i",scoreNumber];
+    _intro3.text = [NSString stringWithFormat:@"最高得分:%i",highScore];
+}
+
 -(void)heliMove{
+    
+    [self collision];
+    
     _heli.center = CGPointMake(_heli.center.x, _heli.center.y+Y);
     
     _obstacle.center = CGPointMake(_obstacle.center.x - 10, _obstacle.center.y);
@@ -81,6 +177,11 @@
     }
 }
 
+-(void)scoring{
+    scoreNumber += 1;
+    _score.text = [NSString stringWithFormat:@"得分:%i",scoreNumber];
+}
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     if(Start == YES){
         _intro1.hidden = YES;
@@ -88,6 +189,8 @@
         self.intro3.hidden = YES;
         
         timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(heliMove) userInfo:nil repeats:YES];
+        scorer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(scoring) userInfo:nil repeats:YES];
+        
         Start = NO;
         
         _bottom1.hidden = NO;
@@ -171,6 +274,9 @@
     _top6.hidden = YES;
     _obstacle.hidden = YES;
     _obstacle2.hidden = YES;
+    
+    highScore = [[NSUserDefaults standardUserDefaults]integerForKey:@"HighScoreSaved"];
+    _intro3.text = [NSString stringWithFormat:@"最高得分:%i",highScore];
     
     [super viewDidLoad];
 	
